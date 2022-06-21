@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -38,6 +39,7 @@
                 android:layout_height="match_parent"
                 android:clipToPadding="false"
                 android:paddingVertical="6dp"
+                android:visibility="invisible"
                 tools:listitem="@layout/item_photo" />
 
             <TextView
@@ -52,23 +54,23 @@
                 app:drawableTopCompat="@drawable/ic_baseline_refresh_24"
                 tools:ignore="HardcodedText" />
 
-<!--            <com.facebook.shimmer.ShimmerFrameLayout-->
-<!--                android:id="@+id/shimmerLayout"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent">-->
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-<!--                <LinearLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:orientation="vertical">-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-<!--                    <include layout="@layout/view_shimmer_item_photo" />-->
+                    <include layout="@layout/view_shimmer_item_photo" />
 
-<!--                    <include layout="@layout/view_shimmer_item_photo" />-->
+                    <include layout="@layout/view_shimmer_item_photo" />
 
-<!--                </LinearLayout>-->
+                </LinearLayout>
 
-<!--            </com.facebook.shimmer.ShimmerFrameLayout>-->
+            </com.facebook.shimmer.ShimmerFrameLayout>
 
         </FrameLayout>
 
